@@ -1,0 +1,16 @@
+{
+  "template": "feature",
+  "status": "draft",
+  "chip": "Feature",
+  "eyebrow": "Import · Step 01",
+  "headline": "Start with your *history*, not a blank page.",
+  "body": "Bring your past meals, weigh-ins and steps into RLJ.",
+  "points": [
+    { "bold": "MyFitnessPal.", "text": "Your food diary." },
+    { "bold": "Apple Health.", "text": "Weight, steps and training." },
+    { "bold": "Samsung Health.", "text": "Weight and steps." }
+  ],
+  "footer": "Free to train",
+  "caption": "Start with your history, not a blank page.\n\nImport your food diary from MyFitnessPal, and your weight, steps and training from Apple Health or Samsung Health. RLJ charts it from day one.\n\nRecord the whole journey, not just the weigh-in. rlj.app",
+  "hashtags": ["#RLJ", "#FoodDiary", "#WeightTracking", "#FitnessTracking"]
+}

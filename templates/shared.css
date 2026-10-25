@@ -1,0 +1,51 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); }
+body { -webkit-font-smoothing: antialiased; }
+
+.post { position: relative; overflow: hidden; background: var(--bg); color: var(--signal); }
+
+/* Faint heartbeat behind the layout, as on the brand book cover */
+.bg-pulse { position: absolute; inset: 0; width: 100%; height: 100%; }
+.bg-pulse polyline { fill: none; stroke: #13264a; stroke-width: 3; stroke-linejoin: round; }
+
+.top { display: flex; align-items: center; justify-content: space-between; }
+
+/* HTML recreation of the wordmark until brand/rlj-wordmark.png is supplied */
+.wordmark { position: relative; width: 200px; height: 64px; }
+.wordmark img { height: 64px; }
+.wordmark .letters { font: 900 64px/1 var(--font-display); letter-spacing: -0.04em; color: var(--ink); }
+.wordmark svg { position: absolute; left: 62px; top: 46px; width: 150px; height: 34px; overflow: visible; }
+.wordmark polyline { fill: none; stroke: var(--accent); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+
+.chip {
+  font: 400 22px/1 var(--font-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  border: 1.5px solid var(--accent);
+  border-radius: 999px;
+  padding: 14px 24px;
+}
+.chip:empty { display: none; }
+
+.eyebrow {
+  font: 400 24px/1 var(--font-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* The one blue word per headline */
+.key { color: var(--accent); text-shadow: 0 0 28px var(--glow); }
+
+.foot {
+  margin-top: auto;
+  padding: 0 0 72px;
+  display: flex;
+  justify-content: space-between;
+  font: 400 24px/1 var(--font-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.foot span:first-child { text-transform: none; letter-spacing: 0.04em; }

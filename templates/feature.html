@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>RLJ feature post</title>
+<link rel="stylesheet" href="../brand/tokens.css">
+<link rel="stylesheet" href="shared.css">
+<style>
+  .content { position: absolute; inset: 0; padding: 88px 88px 0; display: flex; flex-direction: column; }
+  .eyebrow { margin-top: 88px; }
+  h1 {
+    margin: 32px 0 0;
+    font: 900 108px/0.96 var(--font-display);
+    letter-spacing: -0.035em;
+    color: var(--ink);
+  }
+  .body {
+    margin: 36px 0 0;
+    max-width: 904px;
+    font: 400 36px/1.45 var(--font-body);
+    color: var(--muted);
+  }
+  .card {
+    margin-top: 48px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: calc(var(--radius) * 2);
+    padding: 12px 40px;
+  }
+  .point { display: flex; align-items: center; gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
+  .point:first-child { border-top: 0; }
+  .point svg { flex: none; width: 34px; height: 34px; }
+  .point p { margin: 0; font: 400 32px/1.3 var(--font-body); color: var(--muted); }
+  .point b { font-weight: 700; color: var(--ink); }
+</style>
+</head>
+<body>
+  <div class="post" style="width:1080px;height:1350px">
+    <svg class="bg-pulse" viewBox="0 0 1080 1350" preserveAspectRatio="none" aria-hidden="true">
+      <polyline points="0,1205 600,1205 630,1165 662,1235 690,1190 715,1205 1080,1205" />
+    </svg>
+    <div class="content">
+      <div class="top">
+        <div class="wordmark"></div>
+        <span class="chip" data-field="chip"></span>
+      </div>
+      <div class="eyebrow" data-field="eyebrow"></div>
+      <h1 data-field="headline"></h1>
+      <p class="body" data-field="body"></p>
+      <div class="card" data-field="points"></div>
+      <div class="foot">
+        <span>rlj.app</span>
+        <span data-field="footer"></span>
+      </div>
+    </div>
+  </div>
+  <script src="shared.js"></script>
+  <script>
+    renderPost(window.POST || {
+      chip: "Feature",
+      eyebrow: "Import · Step 01",
+      headline: "Start with your *history*, not a blank page.",
+      body: "Bring your past meals, weigh-ins and steps into RLJ.",
+      points: [
+        { bold: "MyFitnessPal.", text: "Your food diary." },
+        { bold: "Apple Health.", text: "Weight, steps and training." },
+        { bold: "Samsung Health.", text: "Weight and steps." }
+      ],
+      footer: "Free to train"
+    });
+  </script>
+</body>
+</html>

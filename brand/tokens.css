@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=block");
+
+:root {
+  --bg: #000000;
+  --surface: #0B0B0C;
+  --calc: #151517;
+  --calc-edge: #2A2A2E;
+  --line: #232326;
+  --accent: #2F7BFF;
+  --accent-2: #5B9BFF;
+  --accent-soft: #0A1730;
+  --warn: #FF8A5B;
+  --ink: #FFFFFF;
+  --signal: #E4E4E7;
+  --muted: #9A9AA2;
+  --glow: rgba(47, 123, 255, .55);
+  --glow-soft: rgba(47, 123, 255, .18);
+  --radius: 12px;
+
+  --font-display: "Archivo", "Arial Narrow", sans-serif;
+  --font-body: "Instrument Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}

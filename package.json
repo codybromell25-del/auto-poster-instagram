@@ -1,0 +1,12 @@
+{
+  "name": "auto-poster-instagram",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Make on-brand RLJ Instagram posts and publish them on a schedule",
+  "scripts": {
+    "render": "node scripts/render.js"
+  },
+  "dependencies": {
+    "puppeteer-core": "^25.16.0"
+  }
+}
